@@ -9,8 +9,32 @@
   </head>
   <body>
     <div id="root">
-      <div class="content-wrapper">
-        <header></header>
+      <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-blue-200">
+        <header class="py-6 mx-10">
+            <nav class="flex justify-between items-center" >
+                <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
+                    CoffeeStyle.
+                </div>
+                <ul class="flex justify-end items-center gap-8 basis-3/6 text-sm text-gray-500 font-medium">
+                    <li><a href="#"class="ct-top-menu-item">HOME</a></li>
+                    <li><a href="#"class="ct-top-menu-item">OUR PRODUCTS</a></li>
+                    <li><a href="#"class="ct-top-menu-item">BLOG</a></li>
+                    <li><a href="#"class="ct-top-menu-item">ABOUT</a></li>
+                    <li><a href="#"class="ct-top-menu-item">CONTACT</a></li>
+                    <li><a href="#"class="ct-top-menu-item">STYLEGUIDE</a></li>
+                </ul>
+                <div class="btn-cart basis-1/6 flex items-center ml-16 text-sm text-gray-500 font-medium uppercase">
+                    <a href="#" class="flex gap-1 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                          </svg>
+                        <span>Cart</span>
+                        <span class="bg-slate-800 w-5 text-center items-center text-xs px-1.5 text-white   rounded-full">0</span>
+                    </a>
+                </div>
+
+            </nav>
+        </header>
         <main></main>
         <footer></footer>
       </div>
