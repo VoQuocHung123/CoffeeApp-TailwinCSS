@@ -16,7 +16,7 @@ document.addEventListener('click',(e)=>{
 })
 listItemTopMenu.forEach(value=>{
     value.addEventListener('click',()=>{
+        document.querySelector('.ct-top-menu-item-active').classList.remove('ct-top-menu-item-active')
         value.classList.add('ct-top-menu-item-active')
-        console.log(listItemTopMenu[0])
     })
 })
