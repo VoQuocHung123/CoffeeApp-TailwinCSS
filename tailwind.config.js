@@ -6,6 +6,9 @@ module.exports = {
       colors:{
         'light-coffee': '#C89F94'
       },
+      height:{
+        'height-slider': '530px',
+      },
       keyframes: {
         slideDown: {
           '0%': { transform: 'translateY(-100%)' },
