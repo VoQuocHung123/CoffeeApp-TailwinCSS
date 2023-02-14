@@ -5,54 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=3">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png?v=3"
+    />
     <title>VoQuocHung - TailwinCSS</title>
   </head>
   <body>
     <div id="root">
-      <div class="content-wrapper font-mono max-w-screen-2xl text-base mx-auto px-8">
+      <div
+        class="content-wrapper font-mono max-w-screen-2xl text-base mx-auto px-8"
+      >
         <header class="p-6 mx-auto">
-            <nav class="flex justify-between items-center relative" >
-                <div class="logo basis-4/6 lg:basis-2/6 text-center text-xl font-semibold cursor-pointer">
-                    CoffeeStyle.
-                </div>
-                <ul id="top-menu" class="hidden lg:flex lg:justify-end lg:items-center lg:gap-8 lg:basis-3/6 text-sm text-gray-500 font-medium">
-                    <li><a href="#"class="ct-top-menu-item ct-top-menu-item-active">HOME</a></li>
-                    <li><a href="#"class="ct-top-menu-item">PRODUCTS</a></li>
-                    <li><a href="#"class="ct-top-menu-item">BLOG</a></li>
-                    <li><a href="#"class="ct-top-menu-item">ABOUT</a></li>
-                    <li><a href="#"class="ct-top-menu-item">CONTACT</a></li>
-                    <li><a href="#"class="ct-top-menu-item">STYLEGUIDE</a></li>
-                </ul>
-                <div class="btn-cart basis-1/6 lg:basis-1/6 flex items-center ml-16 text-sm text-gray-500 font-medium uppercase">
-                    <a href="#" class="flex gap-1 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                          </svg>
-                        <span>Cart</span>
-                        <span class="bg-orange-500 w-5 text-center items-center text-xs px-1.5 text-white   rounded-full">0</span>
-                    </a>
-                </div>
-                <button id="btn-toggle-menu" class="basis-1/6 px-2 sm:px-4 md:block lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>                  
-                </button>
-
-            </nav>
+          <nav class="flex justify-between items-center relative">
+            <div
+              class="logo basis-4/6 lg:basis-2/6 text-center text-xl font-semibold cursor-pointer"
+            >
+              CoffeeStyle.
+            </div>
+            <ul
+              id="top-menu"
+              class="hidden lg:flex lg:justify-end lg:items-center lg:gap-8 lg:basis-3/6 text-sm text-gray-500 font-medium"
+            >
+              <li>
+                <a href="#" class="ct-top-menu-item ct-top-menu-item-active"
+                  >HOME</a
+                >
+              </li>
+              <li><a href="#" class="ct-top-menu-item">PRODUCTS</a></li>
+              <li><a href="#" class="ct-top-menu-item">BLOG</a></li>
+              <li><a href="#" class="ct-top-menu-item">ABOUT</a></li>
+              <li><a href="#" class="ct-top-menu-item">CONTACT</a></li>
+              <li><a href="#" class="ct-top-menu-item">STYLEGUIDE</a></li>
+            </ul>
+            <div
+              class="btn-cart basis-1/6 lg:basis-1/6 flex items-center ml-16 text-sm text-gray-500 font-medium uppercase"
+            >
+              <a href="#" class="flex gap-1 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+                <span>Cart</span>
+                <span
+                  class="bg-orange-500 w-5 text-center items-center text-xs px-1.5 text-white rounded-full"
+                  >0</span
+                >
+              </a>
+            </div>
+            <button
+              id="btn-toggle-menu"
+              class="basis-1/6 px-2 sm:px-4 md:block lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </nav>
         </header>
         <main>
-          <div class="slider relative max-w-screen-2xl h-[530px] bg-[url('./image/slider-bg.jpeg')] bg-cover bg-no-repeat bg-bottom" >
-            <div class="absolute flex justify-center items-center top-0 right-0 bottom-0 bg-black w-full h-full bg-opacity-40">
+          <div
+            class="slider relative max-w-screen-2xl h-[530px] bg-[url('./image/slider-bg.jpeg')] bg-cover bg-no-repeat bg-bottom"
+          >
+            <div
+              class="absolute flex justify-center items-center top-0 right-0 bottom-0 bg-black w-full h-full bg-opacity-40"
+            >
               <div class="content-slide-image text-white text-center mx-4">
                 <h5 class="text-lg font-bold pb-7">BEST PLACE TO BUY COFFEE</h5>
                 <h2 class="text-5xl font-bold pb-7">Coffee Mugs</h2>
-                <p class="font-bold pb-7">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
-                <button class="bg-white text-black p-5">EXPLORE OUR PRODUCTS</button>
+                <p class="font-bold pb-7">
+                  The most versatile furniture system ever created. Designed to
+                  fit your life, made to move and grow.
+                </p>
+                <button class="bg-white text-black p-5">
+                  EXPLORE OUR PRODUCTS
+                </button>
               </div>
             </div>
-
-           
+          </div>
+          <div class="story-description flex justify-center items-center my-5">
+            <div
+              class="content-story text-center w-[90%] lg:w-[60%] md:w-[60%]"
+            >
+              <h5 class="text-2xl font-extrabold py-4">
+                Even the all-powerfull Pointing has no control about the blind
+                text.
+              </h5>
+              <p class="text-[9pt] text-center py-4">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+              <span
+                class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1 hover:text-orange-300 hover:border-orange-300 cursor-pointer"
+                >Read the full Story</span
+              >
+            </div>
+          </div>
+          <div class="sub-headline flex justify-center items-center my-12">
+            <div
+              class="sub-headline-deco-line h-[0.5px] w-[2rem] bg-gray-300"
+            ></div>
+            <div class="label-headline px-2 text-sm font-bold text-gray-400">
+              OUR COFFEE STORY
+            </div>
+            <div
+              class="sub-headline-deco-line h-[0.5px] w-[2rem] bg-gray-300"
+            ></div>
+          </div>
+          <div class="our-coffee-story flex flex-col lg:flex-row justify-center items-center w-[90%] lg:w-[60%] mx-auto my-10">
+            <div class="basis-1/2 ">
+              <video autoplay loop muted src="./video/coffee-video.mp4" class="w-full h-full object-cover min-h-[450px]"></video>
+            </div>
+            <div class="basis-1/2 text-center lg:text-start lg:pl-6">
+              <h5 class="text-2xl font-extrabold py-4">
+                Even the all-powerfull Pointing has no control about the blind
+                text.
+              </h5>
+              <p class="text-[9pt] text-center py-4 lg: text-start">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+              </p>
+              <span
+                class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1 hover:text-orange-300 hover:border-orange-300 cursor-pointer"
+                >Read the full Story</span
+              >
+            </div>
           </div>
         </main>
         <footer></footer>
